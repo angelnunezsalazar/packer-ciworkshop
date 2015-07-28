@@ -27,9 +27,8 @@ Puedes generar la máquina virtual de 2 maneras diferentes: Vagrant o Packer
 
 ## Qué contiene?
 - JDK
-- Jenkins (Puerto 8080)
-- Jetty
-- Gilab
+- Jenkins (Host: localhost:8686, guest: localhost:8080)
+- Gilab (Host: localhost:8787, guest: localhost:80)
 
 ## Development
 
