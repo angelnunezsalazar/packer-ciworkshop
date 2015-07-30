@@ -51,8 +51,8 @@
     },
     {
         "type": "puppet-masterless",
-        "manifest_file": "provisioning/manifests/init.pp",
-        "module_paths": ["provisioning/modules","provisioning/modules-vendor" ],
+        "manifest_file": "manifests/default.pp",
+        "module_paths": ["profile","spec/fixtures/modules" ],
         "execute_command": "echo {{user `admin_pass`}} | sudo -S -E puppet apply --verbose --modulepath='{{.ModulePath}}' {{.ManifestFile}}"
     }]
 }

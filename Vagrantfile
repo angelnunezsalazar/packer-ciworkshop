@@ -6,7 +6,6 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu14.04-x86"
   config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box"
-  #config.vm.network "forwarded_port", guest: 9090, host: 8585 #Jetty
 	config.vm.network "forwarded_port", guest: 8080, host: 8686 #Jenkins
   config.vm.network "forwarded_port", guest: 80, host: 8787 #Gitlab
   
@@ -16,9 +15,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision :puppet do |puppet|
-	  puppet.manifests_path = "provisioning/manifests"
+	  puppet.manifests_path = "manifests"
     puppet.manifest_file = "default.pp"
-		puppet.module_path = ['provisioning/modules','provisioning/modules-vendor' ]
+		puppet.module_path = ['profile','spec/fixtures/modules' ]
     puppet.options = "--verbose --debug"
   end
 end

@@ -1,6 +1,6 @@
 .tmp
 .vagrant
-provisioning/modules-vendor
+spec/fixtures/modules
 output-*
 packer_cache
 .librarian

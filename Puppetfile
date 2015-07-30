@@ -7,7 +7,7 @@ mod "rtyler/jenkins", "1.4.0" #Jenkins
 mod "maestrodev-jetty", "1.1.2" #Jetty
 mod "camptocamp-archive", "0.8.0" #Descomprimir e instalar gradle
 mod "sbadia-gitlab", "1.0.0" #Gitlab
-mod "petems-swap_file", "1.1.1" #Swap Space para GitlabF
+mod "petems-swap_file", "1.1.1" #Swap Space para Gitlab
 
 #Requisitos de gitlab
 mod 'fsalum/redis', '>= 0.0.5'
