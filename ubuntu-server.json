@@ -52,7 +52,7 @@
     {
         "type": "puppet-masterless",
         "manifest_file": "manifests/default.pp",
-        "module_paths": ["profile","spec/fixtures/modules" ],
+        "module_paths": ["dist","spec/fixtures/modules" ],
         "execute_command": "echo {{user `admin_pass`}} | sudo -S -E puppet apply --verbose --modulepath='{{.ModulePath}}' {{.ManifestFile}}"
     }]
 }
