@@ -12,7 +12,7 @@ Script para generar una máquina Virtual Box con algunas herramientas para el Ta
 ## Cómo generar la máquina Virtual?
 
 ### Paso 1: Descargar módulos externos para el provisionamiento
-	$ gundler install
+	$ bundler install
     $ librarian-puppet install --path=spec/fixtures/modules"
 
 ### Paso 2: Generar la máquina virtual
@@ -40,11 +40,7 @@ Correr Pruebas
 
 	$ rake spec
 
-Verificar la sintaxis de puppet
-
-	$ puppet parser validate manifests/default.pp
-
-Reprosionar con vagrant luego del primer "vagrant up"
+Reprovionar con vagrant luego del primer "vagrant up"
 
 	$ vagrant provision
 
